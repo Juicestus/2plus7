@@ -18,10 +18,11 @@
                 <input type='Submit'>
                 </form>
             </div><br>
+            <h2>Threads</h2>
             <div>
                 <ul>
                 {% for thread in threads %}
-                <li><h2><a href="{{board[0]}}/{{thread[0]}}">{{thread[1]}}</a></h2></li>
+                <li><h2><a href="{{board[0]}}/{{thread[0]}}">{{thread[1]}}</a></h2 ></li>
                 {% endfor %}
                 </ul>
             </div>
