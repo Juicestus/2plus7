@@ -1,0 +1,26 @@
+/*
+       ___         _____
+      |__ \    __ /__  /
+      __/ / __/ /_  / /
+     / __/ /_  __/ / / 
+    /____/  /_/   /_/
+       
+Written by Justus Languell 
+*/
+
+body {
+    background-color:#bbb;
+    padding: 20px 20px 20px 20px;
+}
+h1,h2,h3,h4,p {
+    color:#000000;
+}
+hr {
+    border: 2px solid #000000;
+}
+div {
+    border: 2px solid #000000;
+    padding: 5px;
+    width: 600px;
+    background-color:#ccc;
+}

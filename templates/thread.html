@@ -1,0 +1,29 @@
+<html>
+
+    <head>
+        <meta name='DESCRIPTION' content="">
+        <meta name='KEYWORDS' content="">
+
+        <title>2+7</title>
+        <link rel="icon" href="{{ url_for('static', filename='img/icon.png') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    </head>
+
+    <body>
+        <h1><a href="/">2+7</a> :: <a href="/{{board}}">/{{board}}</a> :: {{thread}}</h1>
+        <div>
+            <form method="POST" enctype=multipart/form-data>
+                <p>Name: <input name='name' maxlength='20' placeholder='Anon'> | Subject: <input name='subject' maxlength='20' placeholder='Subject'></p>
+                <p>Message:
+                <textarea name='msg' rows='3' cols='50' maxlength='250' placeholder='Mesage'></textarea><br></p>
+                <input type='Submit'>
+            </form>
+        </div>
+        {% for message in messages %}
+        <div>
+            <p><b>{{message[0]}}</b>: <i>{{message[1]}}</i></p>
+            <p>{{message[2]}}</p>
+        </div>
+        {% endfor %}
+    </body>
+</html>    
